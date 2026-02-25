@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grace's Portfolio</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href=" https://fonts.googleapis.com/css?family=Anton%7C ">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+<link href="https://use.fontawesome.com/releases/v5.8.2/css/all.css " rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="logoTitle"><h2>GRACE<span>BYAMX</span></h2></div>
+
+<main> 
+
+  <!--HOME SECTION-->
+
+<section id="home" class="home section active">
+
+<div class="homeContent">
+<h3>Hello ,  it's me</h3>
+<h1>Grace</h1>
+<h5>I'm  a <span id="wordsOutput">WEB DEVELOPER</span></h5>
+<p class="home-desc">Welcome. This portfolio brings together essential sections such as About, Projects, Services, and Contact, all designed to give you a clear picture of the work, experience, and capabilities presented here. Take a moment to look around, explore the latest creations, and connect through the available social media links.</p>
+
+<div class="socialLinks">
+<a href="https://www.instagram.com/grac.e_b123" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+<a href="https://www.tiktok.com/@grace_byamx" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+<a href="mailto:grace4tech5@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+<a href="tel:9869109781" target="_blank"><i class="fa-solid fa-phone"></i></a>
+</div>
+
+<div class="home-buttons">
+  <button>Download resume</button>
+  <button id="hireMe"><a href="#contact" data-section="contact">Hire me</a></button>
+</div>
+
+</div>
+
+<div class="home-images">
+<img src="images/codingLaptop.png" class="codingLaptop">
+<img src="images/me4-removebg-preview.png" class="meImg">
+</div>
+
+
+</section>
+
+  <!--ABOUT SECTION-->
+<section id="about" class="section about">
+
+  <div class="about-left">
+  <h1>ABOUT ME</h1>
+  <h4>I'm a ~ <span id="aboutMeWords">COLLEGE STUDENT</span></h4>
+  <p class="decriptionAboutME">Curiosity and creativity are the two things that pushed me into the world of development.I enjoy building projects, learning new technologies, and finding better ways to turn ideas into something real.Every challenge teaches me something, and every project helps me grow a little more as a developer.
+
+I’m working toward becoming a stronger web developer and future software engineer, and this portfolio is where I share that journey , the skills I’m improving, the projects I’m creating, and the goals I’m chasing. I love solving problems, experimenting with design, and exploring anything that moves me forward.
+
+Here, you’ll find my work, my growth, and the things I’m passionate about. And I’m just getting started.</p>
+
+  <div class="questions">
+
+    <div class="questions-container">
+      <button id="question1"><i id="lock1"  class="fas fa-lock"></i>
+   How do you balance creativity with functionality ?</button>
+      <span id="answer1">By keeping things simple first, then adding creativity only where it improves the experience.</span>
+    </div>
+
+      <div class="questions-container">
+      <button id="question2"> <i id="lock2" class="fas fa-lock"></i>
+What sets your approach apart ? </button>
+      <span id="answer2">I focus on clarity, clean structure, and solutions that actually make sense for real use.</span>
+    </div>
+
+    <div class="questions-container">
+      <button id="question3"> <i id="lock3" class="fas fa-lock"></i>
+How do you handle challenges in projects ?</button>
+      <span id="answer3">I break them down, test quickly, and learn whatever I need to solve them.</span>
+    </div>
+
+        <div class="questions-container">
+      <button id="question4"> <i id="lock4" class="fas fa-lock"></i>
+What motivates you to keep improving?</button>
+      <span id="answer4">Seeing progress and knowing each project makes me better.</span>
+    </div>
+
+
+  </div>
+
+</div>
+
+<div class="about-right" >
+
+  <!--JS-->
+<div class="skill">
+  <div class="outer">
+    <div class="inner">
+      <div class="language">JAVASCRIPT</div>
+    </div>
+  </div>
+
+  <svg width="140" height="140">
+    <defs>
+      <linearGradient id="gc-js">
+        <stop offset="0%" stop-color="#DA22FF"/>
+        <stop offset="100%" stop-color="#9733EE"/>
+      </linearGradient>
+    </defs>
+
+    <circle class="jsCircle" style="--percent:50;" cx="70" cy="70" r="62.5" stroke="url(#gc-js)"/>
+  </svg>
+</div>
+ 
+<!--HTML-->
+<div class="skill">
+  <div class="outer">
+    <div class="inner">
+      <div class="language">HTML</div>
+    </div>
+  </div>
+
+  <svg width="140" height="140">
+    <defs>
+      <linearGradient id="gc-html">
+        <stop offset="0%" stop-color="#DA22FF"/>
+        <stop offset="100%" stop-color="orangered"/>
+      </linearGradient>
+    </defs>
+
+    <circle class="htmlCircle" style="--percent:95;" cx="70" cy="70" r="62.5" stroke="url(#gc-html)"/>
+  </svg>
+</div>
+
+<!--CSS-->
+<div class="skill">
+  <div class="outer">
+    <div class="inner">
+      <div class="language">CSS</div>
+    </div>
+  </div>
+
+  <svg width="140" height="140">
+    <defs>
+      <linearGradient id="gc-css">
+        <stop offset="0%" stop-color="purple"/>
+        <stop offset="100%" stop-color="red"/>
+      </linearGradient>
+    </defs>
+
+    <circle class="cssCircle" style="--percent:95;" cx="70" cy="70" r="62.5" stroke="url(#gc-css)"/>
+  </svg>
+</div>
+
+</div>
+
+</section>
+
+  <!--PORTFOLIO SECTION-->
+<section id="portfolio" class="section portfolio">
+  <h1>Latest <span>Project</span></h1>
+  <div class="works"></div>
+</section>
+
+  <!--SERVICES SECTION-->
+<section id="services" class="section services">
+  <h1>Our <span>Services</span></h1>
+
+  <div class="services-container">
+
+<div class="service">
+  <div class="service-inner">
+
+      <div class="service-front">
+        <i class="fab fa-html5"></i>
+        <h3>Frontend Website Development</h3>
+        <p>Read more</p>
+      </div>
+
+      <div class="service-back">
+        <i class="fab fa-html5"></i>
+        <p>I build modern, responsive, and user-friendly websites that look great on all devices and deliver a smooth, professional experience for your visitors.</p>
+        <button class="service-btn">
+          <a href="#contact" data-section="contact">Book Service</a>
+        </button>
+      </div>
+
+  </div>
+</div>
+
+<div class="service">
+  <div class="service-inner">
+
+      <div class="service-front">
+       <i class="fab fa-js-square"></i>
+        <h3>Javascript Web Apps</h3>
+        <p>Read more</p>
+      </div>
+
+      <div class="service-back">
+       <i class="fab fa-js-square"></i>
+        <p>I create dynamic, interactive web applications using JavaScript—making websites faster, smarter, and more engaging for users.</p>
+        <button class="service-btn">
+          <a href="#contact" data-section="contact">Book Service</a>
+        </button>
+      </div>
+
+  </div>
+</div>
+
+<div class="service">
+  <div class="service-inner">
+
+      <div class="service-front">
+       <i class="fas fa-bug"></i>
+        <h3>Bug Fixing</h3>
+        <p>Read more</p>
+      </div>
+
+      <div class="service-back">
+       <i class="fas fa-bug"></i>
+        <p>I create dynamic, interactive web applications using JavaScript—making websites faster, smarter, and more engaging for users.</p>
+        <button class="service-btn">
+          <a href="#contact" data-section="contact">Book Service</a>
+        </button>
+      </div>
+
+  </div>
+</div>
+
+<div class="service">
+  <div class="service-inner">
+
+      <div class="service-front">
+      <i class="fas fa-pencil-ruler"></i>
+        <h3>Simple UI Features</h3>
+        <p>Read more</p>
+      </div>
+
+      <div class="service-back">
+       <i class="fas fa-pencil-ruler"></i>
+        <p>I create clean, user-friendly interface elements that enhance usability and improve the overall look and feel of your website.</p>
+        <button class="service-btn">
+          <a href="#contact" data-section="contact">Book Service</a>
+        </button>
+      </div>
+
+  </div>
+</div>
+       
+  </div>
+
+</section>
+
+  <!--CONTACT SECTION-->
+<section id="contact" class="section contact">
+  <h1>Contact <span>Me</span></h1>
+
+  <div class="sectionBoxContainer">
+
+<div class="contact-divs">
+  <a href="mailto:grace4tech5@gmail.com" target="_blank">
+<i class="fas fa-envelope"></i>
+<h4>Email Adress</h4>
+<p>grace4tech5@gmail.com</p>
+</a>
+</div>
+
+<div class="contact-divs">
+  <a href="tel:9869109781" target="_blank">
+<i class="fas fa-phone"></i>
+<h4>Phone Number</h4>
+<p>+1 (986) 910-9781</p>
+</a>
+</div>
+
+<div class="contact-divs">
+  <a href="https://www.linkedin.com/in/gracebyamx" target="_blank">
+<i class="fab fa-linkedin"></i>
+<h4>linkedin</h4>
+<p>grace4tech</p>
+</a>
+</div>
+
+  </div>
+
+  <form action="https://getform.io/f/bdrrowqb" method="post" class="contact-form">
+    <input name="Name" placeholder="Enter Your Name">
+    <input name="Email" placeholder="Enter Your Email">
+    <textarea cols="80" rows="10" name="Message" placeholder="Your Message"></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+
+</section>
+
+</main>
+
+<nav class="navBar">
+
+  <div class="links">
+<a href="https://github.com/grace4tech" target="_blank"><i class="fab fa-github"></i></a>
+<a href="https://www.linkedin.com/in/gracebyamx" target="_blank"><i class="fab fa-linkedin"></i></a>
+<a href="" target="_blank"><i class="fab fa-twitter"></i></a>
+<a href="tel:9869109781" target="_blank"><i class="fas fa-phone"></i></a>
+  </div>
+
+<ul class="navigationLinks">
+  <li style="--bg:violet;">
+    <a href="#home" data-section="home"><i class="fas fa-home"></i></a>
+  </li>
+
+    <li style="--bg:green;">
+    <a href="#about" data-section="about"><i class="fas fa-user"></i></a>
+  </li>
+
+      <li style="--bg:blue;">
+    <a href="#portfolio" data-section="portfolio"><i class="fas fa-briefcase"></i></a>
+  </li>
+
+        <li style="--bg:orangered;">
+    <a href="#services" data-section="services"><i class="fas fa-tools"></i></a>
+  </li>
+
+          <li style="--bg:pink;">
+    <a href="#contact" data-section="contact"><i class="fas fa-envelope"></i></a>
+  </li>
+
+          <li style="--bg:rgb(47, 98, 14);">
+    <button id="toggleBtn"><i class="fas fa-moon" id="themeIcon"></i></button>
+  </li>
+
+</ul>
+</nav>
+
+<script src="script.js"></script>
+</body>
+</html>
