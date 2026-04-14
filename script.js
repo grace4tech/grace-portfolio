@@ -1,10 +1,12 @@
-// TO-DO : My work 
+// TO-DO : TABLET RESPONSIVE 
 
 // HOME : twitter , resume (dowload)
 // ABOUT : (done ✔️ )
-// PORTOFIOL : 
+// PORTOFIOL : (done ✔️)
 // SERVICES : (done ✔️)
 // CONTACT : (done ✔️)
+// PHONE RESPONSIVE : (done ✔️)
+//DESKTOP RESPONSIVE: (done ✔️)
 
 function navigation(){
  
@@ -103,12 +105,15 @@ toggleBtn.addEventListener("click",()=>{
 document.querySelectorAll(".language").forEach(l => l.classList.toggle("darkMode"));
 
 document.querySelectorAll(".service-front").forEach(s => s.classList.toggle("darkMode"));
-document.querySelectorAll(".service-front p").forEach(p => p.classList.toggle("darkMode"));
+document.querySelectorAll(".service-front button").forEach(p => p.classList.toggle("darkMode"));
 document.querySelectorAll(".service-back").forEach(p => p.classList.toggle("darkMode"));
 document.querySelector("#services h1").classList.toggle("darkMode"); 
 
 document.querySelectorAll(".contact-divs a").forEach(p => p.classList.toggle("darkMode"));
 document.querySelector(".contact-form").classList.toggle("darkMode"); 
+document.querySelectorAll(".works .project").forEach(p => p.classList.toggle("darkMode")); 
+document.querySelector(".portfolio h1").classList.toggle("darkMode"); 
+document.querySelector(".contact h1 span").classList.toogle("darkMode"); 
 })
 
 
@@ -184,3 +189,46 @@ setInterval(()=>{
   aboutMeWords.textContent = randomWord;
 } , 4000)
 
+
+// BLUR BOXES ON HOVER 
+
+const projects = document.querySelectorAll(".project");
+
+projects.forEach(p => {
+  const h5 = p.querySelector("h5");
+  const originalText = h5.textContent;
+
+  p.addEventListener("mouseover", () => {
+    h5.textContent = "Click to check it out";  
+    h5.classList.add("highlight");            
+  });
+
+  p.addEventListener("mouseout", () => {
+    h5.textContent = originalText;           
+    h5.classList.remove("highlight");        
+  });
+});
+
+
+// READ MORE SERVICES 
+const services = document.querySelectorAll(".service");
+
+services.forEach(service => {
+  const inner = service.querySelector(".service-inner");
+  const readMore = service.querySelector(".readMore");
+
+  // OPEN / FLIP card
+  readMore.addEventListener("click", (e) => {
+    e.stopPropagation(); 
+    inner.classList.add("flip");
+  });
+
+  // CLOSE / UNFLIP when clicking the back side button
+  const backButton = service.querySelector(".service-btn");
+
+  backButton.addEventListener("click", (e) => {
+    // optional: prevent scroll jump
+    e.stopPropagation();
+    inner.classList.remove("flip");
+  });
+});
